@@ -1,2 +1,3 @@
 # SkyBlockDB
-Database for Hypixel SkyBlock
+
+Cache Database via the Hypixel Public API.

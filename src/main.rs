@@ -14,7 +14,6 @@ async fn main() -> Result<(), Box<dyn std::error::Error>> {
     let start_time = Instant::now();
 
     let all_auctions = Arc::new(Mutex::new(Vec::new()));
-
     fetch_auction(all_auctions.clone()).await.expect("Failed to fetch auctions");
 
     let auctions = all_auctions.lock().unwrap();
